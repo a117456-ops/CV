@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { max-width: 800px; margin: 0 auto; padding: 1rem; color: #222; font: 16px/1.5 Arial, sans-serif; }
+header { padding: 2rem 1rem; color: white; text-align: center; background: #176b87; }
+header h1 { margin: 0; }
+nav { display: flex; justify-content: center; gap: 1rem; padding: 1rem 0; }
+nav a { color: #176b87; font-weight: bold; }
+section { margin: 1rem 0; padding: 1rem; border: 1px solid #ddd; }
+h2 { margin-top: 0; color: #176b87; }
+.actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+button, .download { padding: .6rem .8rem; border: 0; background: #176b87; color: white; font: inherit; text-decoration: none; cursor: pointer; }
+button:hover, .download:hover { background: #104d64; }
+#curriculo[hidden] { display: none; }
+.cv-item { padding: .5rem 0; border-bottom: 1px solid #ddd; }
+.cv-item:last-child { border: 0; }
+.cv-item h3 { margin: 0; }
+.cv-item p { margin: .2rem 0 0; }
+footer { text-align: center; }

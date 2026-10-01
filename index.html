@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Página pessoal e currículo de Paulo Jesus.">
+	<title>Página pessoal |Paulo Jesus</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header id="inicio">
+		<h1>Paulo Jesus</h1>
+		<p>Estudante · Programação</p>
+	</header>
+	<nav aria-label="Navegação principal">
+		<a href="#sobre">Sobre mim</a>
+		<a href="#curriculo">Currículo</a>
+		<a href="#contactos">Contactos</a>
+	</nav>
+	<main>
+		<section id="sobre">
+			<h2>Sobre mim</h2>
+			<p>Olá! O meu nome é Paulo, tenho 16 anos e estou a tirar o curso gestão e programação de sistemas informáticos na Escola Secundária de Gondomar. Interesso-me por desenvolvimento web e desenvolvimento de jogos. Esta página apresenta um resumo do meu percurso e das minhas competências.</p>
+			<div class="actions">
+				<button type="button" id="mostrar-cv" aria-controls="curriculo" aria-expanded="false">Ver o meu CV</button>
+				<a class="download" href="cv.pdf" download>Descarregar CV (PDF)</a>
+			</div>
+		</section>
+
+		<section id="curriculo" class="cv-card" hidden aria-label="Currículo visual">
+			<div class="cv-heading">
+				<div><h2>Currículo</h2><p>Paulo Jesus · Fânzeres</p></div>
+				<a class="download" href="cv.pdf" download>Descarregar PDF</a>
+			</div>
+			<div class="cv-item"><h3>Formação</h3><p>Gestão e programação de sistemas informáticos / 11º ano — Escola Secundária de Gondomar, Gondomar · 01/10/2026</p></div>
+			<div class="cv-item"><h3>Experiência e projetos</h3><p>Jogos simples com pygame</p></div>
+			<div class="cv-item"><h3>Competências</h3><p>Python e Html</p></div>
+			<div class="cv-item"><h3>Idiomas</h3><p>Português fluente e inglês básico</p></div>
+			<div class="cv-item"><h3>Interesses</h3><p>Desenvolvimento web, desenvolvimento de jogos e cibersegurança</p></div>
+		</section>
+
+		<section id="contactos">
+			<h2>Contactos</h2>
+			<p>Email: a117456@aeg1.pt</p>
+			<p>GitHub: <a href="https://github.com/a117456-ops">O meu perfil no Github</a></p>
+		</section>
+	</main>
+	<footer><p>© <span id="ano"></span> Paulo Jesus</p></footer>
+	<script>
+		const botao = document.getElementById('mostrar-cv');
+		const curriculo = document.getElementById('curriculo');
+		botao.addEventListener('click', () => {
+			const vaiMostrar = curriculo.hidden;
+			curriculo.hidden = !vaiMostrar;
+			botao.setAttribute('aria-expanded', String(vaiMostrar));
+			botao.textContent = vaiMostrar ? 'Ocultar o meu CV' : 'Ver o meu CV';
+			if (vaiMostrar) curriculo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		});
+		document.getElementById('ano').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
