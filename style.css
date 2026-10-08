@@ -1,17 +1,176 @@
-* { box-sizing: border-box; }
-body { max-width: 800px; margin: 0 auto; padding: 1rem; color: #222; font: 16px/1.5 Arial, sans-serif; }
-header { padding: 2rem 1rem; color: white; text-align: center; background: #176b87; }
-header h1 { margin: 0; }
-nav { display: flex; justify-content: center; gap: 1rem; padding: 1rem 0; }
-nav a { color: #176b87; font-weight: bold; }
-section { margin: 1rem 0; padding: 1rem; border: 1px solid #ddd; }
-h2 { margin-top: 0; color: #176b87; }
-.actions { display: flex; flex-wrap: wrap; gap: .5rem; }
-button, .download { padding: .6rem .8rem; border: 0; background: #176b87; color: white; font: inherit; text-decoration: none; cursor: pointer; }
-button:hover, .download:hover { background: #104d64; }
-#curriculo[hidden] { display: none; }
-.cv-item { padding: .5rem 0; border-bottom: 1px solid #ddd; }
-.cv-item:last-child { border: 0; }
-.cv-item h3 { margin: 0; }
-.cv-item p { margin: .2rem 0 0; }
-footer { text-align: center; }
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #222;
+    background: #f4f7f8;
+    font: 16px/1.5 Arial, sans-serif;
+}
+
+header {
+    padding: 2.5rem 1rem;
+    color: white;
+    text-align: center;
+    background: #176b87;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    color: #176b87;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 1rem 0;
+    padding: 1.3rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #176b87;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1.2rem;
+}
+
+button,
+.download {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #176b87;
+    color: white;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover,
+.download:hover {
+    background: #104d64;
+}
+
+button:active,
+.download:active {
+    transform: translateY(1px);
+}
+
+#curriculo[hidden] {
+    display: none;
+}
+
+.cv-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cv-heading h2 {
+    margin-bottom: 0.2rem;
+}
+
+.cv-heading p {
+    margin-top: 0;
+    color: #555;
+}
+
+.cv-item {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cv-item:last-child {
+    border-bottom: none;
+}
+
+.cv-item h3 {
+    margin: 0;
+    color: #176b87;
+}
+
+.cv-item p {
+    margin: 0.3rem 0 0;
+}
+
+#contactos a {
+    color: #176b87;
+    word-break: break-word;
+}
+
+footer {
+    padding: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        gap: 0.7rem;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    button,
+    .download {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cv-heading {
+        align-items: flex-start;
+    }
+}
