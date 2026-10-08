@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Quando Ter o Básico Não Chega</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            margin: 0;
+        }
+
+        header {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .inicio {
+            background-color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 3px solid black;
+        }
+
+        .inicio h1 {
+            font-size: 40px;
+        }
+
+        .inicio p {
+            font-size: 18px;
+        }
+
+        .botao {
+            display: inline-block;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        section {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid gray;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid gray;
+            padding-bottom: 5px;
+        }
+
+        .caixas {
+            display: flex;
+            gap: 15px;
+        }
+
+        .caixa {
+            border: 2px solid black;
+            padding: 15px;
+            background-color: #eeeeee;
+            flex: 1;
+        }
+
+        .caixa h3 {
+            color: #222;
+        }
+
+        .numero {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .citacao {
+            background-color: #ddd;
+            border-left: 5px solid blue;
+            padding: 15px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            .caixas {
+                display: block;
+            }
+
+            .caixa {
+                margin-bottom: 15px;
+            }
+
+            section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Quando Ter o Básico Não Chega</h1>
+        <p>Trabalho escolar sobre pobreza e exclusão social</p>
+    </header>
+
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#pobreza">Pobreza</a>
+        <a href="#privacao">Privação</a>
+        <a href="#projeto">Projeto</a>
+        <a href="#conclusao">Conclusão</a>
+        <a href="#fontes">Fontes</a>
+    </nav>
+
+    <div class="inicio">
+        <p><b>PROJETO DE SENSIBILIZAÇÃO</b></p>
+
+        <h1>Quando Ter o Básico Não Chega.</h1>
+
+        <p>
+            Uma reflexão sobre a pobreza, a exclusão social
+            e a privação material e social.
+        </p>
+
+        <a class="botao" href="#introducao">Começar</a>
+    </div>
+
+    <section id="introducao">
+
+        <h2>O problema</h2>
+
+        <p>
+            A pobreza não significa apenas não ter dinheiro.
+            Também pode significar ter dificuldades em ter acesso
+            a oportunidades, serviços e participação na sociedade.
+        </p>
+
+        <p>
+            Muitas pessoas vivem situações em que conseguem ter
+            algumas necessidades básicas, mas continuam sem conseguir
+            participar plenamente na sociedade.
+        </p>
+
+    </section>
+
+    <section id="pobreza">
+
+        <h2>Pobreza</h2>
+
+        <p>
+            A pobreza pode afetar várias partes da vida de uma pessoa.
+            Não se trata apenas da quantidade de dinheiro disponível.
+        </p>
+
+        <div class="caixas">
+
+            <div class="caixa">
+                <h3>Falta de recursos</h3>
+
+                <p>
+                    Algumas pessoas não têm dinheiro suficiente para
+                    garantir todas as suas necessidades básicas.
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>Menos oportunidades</h3>
+
+                <p>
+                    A falta de recursos pode dificultar o acesso
+                    à educação, ao emprego e a outras oportunidades.
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>Exclusão</h3>
+
+                <p>
+                    A pobreza também pode fazer com que algumas pessoas
+                    se sintam afastadas da sociedade.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="privacao">
+
+        <h2>Privação material e social</h2>
+
+        <p>
+            A privação material e social acontece quando uma pessoa
+            não consegue ter acesso a determinados bens, serviços
+            ou atividades considerados importantes para uma vida digna.
+        </p>
+
+        <div class="caixas">
+
+            <div class="caixa">
+                <h3>Condições materiais</h3>
+
+                <p>
+                    Dificuldades em ter uma casa adequada, alimentação,
+                    roupa, eletricidade ou outros bens essenciais.
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>Atividades sociais</h3>
+
+                <p>
+                    Dificuldade em participar em atividades com outras
+                    pessoas, como sair, conviver ou passar férias.
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>Participação na comunidade</h3>
+
+                <p>
+                    Algumas pessoas podem ter dificuldades em participar
+                    plenamente na comunidade onde vivem.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projeto">
+
+        <h2>O nosso projeto</h2>
+
+        <p>
+            O objetivo deste projeto é chamar a atenção para situações
+            de pobreza, privação e exclusão social.
+        </p>
+
+        <h3>Objetivos</h3>
+
+        <div class="caixas">
+
+            <div class="caixa">
+                <h3>1. Informar</h3>
+
+                <p>
+                    Dar a conhecer melhor o problema da pobreza.
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>2. Sensibilizar</h3>
+
+                <p>
+                    Mostrar que a pobreza pode afetar qualquer área
+                    da vida de uma pessoa.
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>3. Envolver</h3>
+
+                <p>
+                    Incentivar as pessoas a preocuparem-se com
+                    os problemas da sociedade.
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>4. Agir</h3>
+
+                <p>
+                    Procurar formas de ajudar e contribuir para
+                    uma sociedade mais justa.
+                </p>
+            </div>
+
+        </div>
+
+        <h3>Resultado</h3>
+
+        <p class="numero">4.5</p>
+
+        <p>
+            Este projeto pretende mostrar que pequenas ações podem
+            ajudar a criar uma sociedade mais consciente.
+        </p>
+
+        <div class="citacao">
+            "Ajudar começa por reconhecer."
+        </div>
+
+    </section>
+
+    <section id="conclusao">
+
+        <h2>Uma sociedade mais consciente</h2>
+
+        <p>
+            Combater a pobreza e a exclusão social não é apenas
+            responsabilidade das instituições. Todos podemos contribuir
+            para uma sociedade mais justa e solidária.
+        </p>
+
+        <h3>O que podemos fazer?</h3>
+
+        <ul>
+            <li>Doar</li>
+            <li>Fazer voluntariado</li>
+            <li>Participar em campanhas</li>
+            <li>Partilhar informação</li>
+        </ul>
+
+        <div class="citacao">
+            "Ninguém deve ser excluído do acesso a uma vida digna."
+        </div>
+
+    </section>
+
+    <section id="fontes">
+
+        <h2>Fontes</h2>
+
+        <p>
+            Algumas das fontes utilizadas para este trabalho:
+        </p>
+
+        <ul>
+            <li>Eurostat</li>
+            <li>INE - Instituto Nacional de Estatística</li>
+            <li>Comissão Europeia</li>
+            <li>ONU - Objetivos de Desenvolvimento Sustentável</li>
+        </ul>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 - Trabalho escolar</p>
+
+        <p>Quando Ter o Básico Não Chega</p>
+
+    </footer>
+
+</body>
+</html>
