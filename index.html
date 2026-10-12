@@ -3,176 +3,428 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página pessoal e currículo de Paulo Jesus.">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Página pessoal e currículo de Paulo Jesus."
+    >
+
     <title>Página pessoal | Paulo Jesus</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header id="inicio">
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
         <h1>Paulo Jesus</h1>
-        <p>Estudante · Programação</p>
+
+        <p>
+            Estudante · Programação
+        </p>
+
     </header>
 
+
+    <!-- =========================
+         MENU DE NAVEGAÇÃO
+    ========================== -->
+
     <nav aria-label="Navegação principal">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre mim</a>
-        <a href="#curriculo">Currículo</a>
-        <a href="#contactos">Contactos</a>
+
+        <a href="#inicio">
+            Início
+        </a>
+
+        <a href="#sobre">
+            Sobre mim
+        </a>
+
+        <a href="#curriculo">
+            Currículo
+        </a>
+
+        <a href="#contactos">
+            Contactos
+        </a>
+
     </nav>
+
 
     <main>
 
-        <section id="sobre">
-            <h2>Sobre mim</h2>
+        <!-- =========================
+             PÁGINA INICIAL
+        ========================== -->
+
+        <section id="inicio" aria-labelledby="titulo-inicio">
+
+            <h2 id="titulo-inicio">Bem-vindo à minha página</h2>
 
             <p>
-                Olá! O meu nome é Paulo, tenho 16 anos e estou a tirar o
-                curso de Gestão e Programação de Sistemas Informáticos na
-                Escola Secundária de Gondomar.
-            </p>
-
-            <p>
-                Interesso-me por desenvolvimento web, desenvolvimento de jogos
-                e cibersegurança. Esta página apresenta um resumo do meu
-                percurso e das minhas competências.
+                Olá Sou estudante de Gestão e Programação de Sistemas
+                Informáticos. Aqui podes conhecer um pouco sobre mim e consultar
+                o meu currículo.
             </p>
 
             <div class="actions">
+                <a href="#sobre">Conhecer-me</a>
+                <a href="#curriculo">Ver currículo</a>
+            </div>
+
+        </section>
+
+        <!-- =========================
+             SOBRE MIM
+        ========================== -->
+
+        <section id="sobre" hidden>
+
+            <h2>Sobre mim</h2>
+
+            <p>
+                Olá! O meu nome é Paulo, tenho 16 anos e estou a tirar
+                o curso de Gestão e Programação de Sistemas Informáticos
+                na Escola Secundária de Gondomar.
+            </p>
+
+            <p>
+                Interesso-me por desenvolvimento web,
+                desenvolvimento de jogos e cibersegurança.
+                Esta página apresenta um resumo do meu percurso
+                e das minhas competências.
+            </p>
+
+
+            <div class="actions">
+
+                <!-- BOTÃO MOSTRAR CV -->
+
                 <button
                     type="button"
                     id="mostrar-cv"
                     aria-controls="curriculo"
-                    aria-expanded="false">
+                    aria-expanded="false"
+                >
                     Ver o meu CV
                 </button>
+
+
+                <!-- BOTÃO DOWNLOAD -->
 
                 <a
                     class="download"
                     href="CV_Paulo_Jesus.pdf"
-                    download="CV_Paulo_Jesus.pdf">
+                    download="CV_Paulo_Jesus.pdf"
+                >
                     Descarregar CV (PDF)
                 </a>
+
             </div>
+
         </section>
+
+
+        <!-- =========================
+             CURRÍCULO
+        ========================== -->
 
         <section
             id="curriculo"
             class="cv-card"
             hidden
-            aria-label="Currículo visual">
+            aria-label="Currículo visual"
+        >
 
             <div class="cv-heading">
+
                 <div>
-                    <h2>Currículo</h2>
-                    <p>Paulo Jesus · Fânzeres</p>
+
+                    <h2>
+                        Currículo
+                    </h2>
+
+                    <p>
+                        Paulo Jesus · Fânzeres
+                    </p>
+
                 </div>
+
+
+                <!-- DOWNLOAD DENTRO DO CV -->
 
                 <a
                     class="download"
                     href="CV_Paulo_Jesus.pdf"
-                    download="CV_Paulo_Jesus.pdf">
+                    download="CV_Paulo_Jesus.pdf"
+                >
                     Descarregar PDF
                 </a>
+
             </div>
 
+
+            <!-- FORMAÇÃO -->
+
             <div class="cv-item">
-                <h3>Formação</h3>
+
+                <h3>
+                    Formação
+                </h3>
+
                 <p>
-                    <strong>Gestão e Programação de Sistemas Informáticos</strong>
+                    <strong>
+                        Gestão e Programação de Sistemas Informáticos
+                    </strong>
                     — 11.º ano
                 </p>
+
                 <p>
-                    Escola Secundária de Gondomar, Gondomar
+                    Escola Secundária de Gondomar,
+                    Gondomar
                 </p>
-                <p>01/10/2026</p>
-            </div>
 
-            <div class="cv-item">
-                <h3>Experiência e projetos</h3>
                 <p>
-                    Desenvolvimento de jogos simples utilizando Python e Pygame.
+                    01/10/2026
                 </p>
+
             </div>
 
-            <div class="cv-item">
-                <h3>Competências</h3>
-                <p>Python</p>
-                <p>HTML</p>
-            </div>
+
+            <!-- EXPERIÊNCIA E PROJETOS -->
 
             <div class="cv-item">
-                <h3>Idiomas</h3>
-                <p>Português — fluente</p>
-                <p>Inglês — básico</p>
-            </div>
 
-            <div class="cv-item">
-                <h3>Interesses</h3>
+                <h3>
+                    Experiência e projetos
+                </h3>
+
                 <p>
-                    Desenvolvimento web, desenvolvimento de jogos
+                    Desenvolvimento de jogos simples
+                    utilizando Python com a biblioteca Pygame.
+                </p>
+
+            </div>
+
+
+            <!-- COMPETÊNCIAS -->
+
+            <div class="cv-item">
+
+                <h3>
+                    Competências
+                </h3>
+
+                <p>
+                    Python
+                </p>
+
+                <p>
+                    HTML
+                </p>
+
+            </div>
+
+
+            <!-- IDIOMAS -->
+
+            <div class="cv-item">
+
+                <h3>
+                    Idiomas
+                </h3>
+
+                <p>
+                    Português — fluente
+                </p>
+
+                <p>
+                    Inglês — básico
+                </p>
+
+            </div>
+
+
+            <!-- INTERESSES -->
+
+            <div class="cv-item">
+
+                <h3>
+                    Interesses
+                </h3>
+
+                <p>
+                    Desenvolvimento web,
+                    desenvolvimento de jogos
                     e cibersegurança.
                 </p>
+
             </div>
+
         </section>
 
-        <section id="contactos">
-            <h2>Contactos</h2>
+
+        <!-- =========================
+             CONTACTOS
+        ========================== -->
+
+        <section id="contactos" hidden>
+
+            <h2>
+                Contactos
+            </h2>
+
 
             <p>
-                <strong>Email:</strong>
-                <a href="mailto:a117456@aeg1.pt">
+
+                <strong>
+                    Email:
+                </strong>
+
+                <a
+                    href="mailto:a117456@aeg1.pt"
+                >
                     a117456@aeg1.pt
                 </a>
+
             </p>
 
+
             <p>
-                <strong>GitHub:</strong>
+
+                <strong>
+                    GitHub:
+                </strong>
+
                 <a
                     href="https://github.com/a117456-ops"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                >
                     O meu perfil no GitHub
                 </a>
+
             </p>
+
         </section>
 
     </main>
 
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
     <footer>
-        <p>© <span id="ano"></span> Paulo Jesus</p>
+
+        <p>
+            © <span id="ano"></span> Paulo Jesus
+        </p>
+
     </footer>
 
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script>
-        const botao = document.getElementById("mostrar-cv");
-        const curriculo = document.getElementById("curriculo");
+
+        const botao =
+            document.getElementById("mostrar-cv");
+
+        const curriculo =
+            document.getElementById("curriculo");
+
+        document.querySelectorAll('nav a[href^="#"]').forEach((link) => {
+            link.addEventListener("click", () => {
+                const section = document.querySelector(link.getAttribute("href"));
+                if (section) {
+                    section.hidden = false;
+                }
+            });
+        });
+
+        document.querySelectorAll('a[href="#sobre"]').forEach((link) => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+
+                const sobre = document.getElementById("sobre");
+                if (sobre) {
+                    sobre.hidden = false;
+                    history.replaceState(null, "", "#sobre");
+                    sobre.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            });
+        });
+
+        function mostrarCurriculo() {
+            curriculo.hidden = false;
+            botao.setAttribute("aria-expanded", "true");
+            botao.textContent = "Ocultar o meu CV";
+        }
+
+        document.querySelectorAll('a[href="#curriculo"]').forEach((link) => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                mostrarCurriculo();
+                history.replaceState(null, "", "#curriculo");
+                curriculo.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            });
+        });
 
         botao.addEventListener("click", () => {
-            const vaiMostrar = curriculo.hidden;
+
+            const vaiMostrar =
+                curriculo.hidden;
+
 
             curriculo.hidden = !vaiMostrar;
+
 
             botao.setAttribute(
                 "aria-expanded",
                 String(vaiMostrar)
             );
 
-            botao.textContent = vaiMostrar
-                ? "Ocultar o meu CV"
-                : "Ver o meu CV";
+
+            botao.textContent =
+                vaiMostrar
+                    ? "Ocultar o meu CV"
+                    : "Ver o meu CV";
+
 
             if (vaiMostrar) {
+
                 curriculo.scrollIntoView({
                     behavior: "smooth",
                     block: "start"
                 });
+
             }
+
         });
+
 
         document.getElementById("ano").textContent =
             new Date().getFullYear();
+
     </script>
 
 </body>
